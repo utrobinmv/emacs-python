@@ -132,8 +132,24 @@
 
 (define-key
   global-map
+  [menu-bar jfmenu view browse-url-at-point]
+  '("EWW browse url at point" . browse-url-at-point))
+
+(define-key
+  global-map
   [menu-bar jfmenu view savesession]
   '("Save session" . (desktop-save-mode t)))
+
+(define-key
+  global-map
+  [menu-bar jfmenu view go-translate]
+  '("Google translate" . go-translate))
+
+(define-key
+  global-map
+  [menu-bar jfmenu view go-translate-popup]
+  '("Google translate popup" . go-translate-popup))
+
 
 
 ;; code to remove the whole menu panel
